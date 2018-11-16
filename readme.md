@@ -1,5 +1,3 @@
 # Business Processes
 
-1 commit
-
-2 commit
+Overview : this application is a single stop for various business processes, inclusive of work flow and process documentation
