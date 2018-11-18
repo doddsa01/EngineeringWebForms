@@ -67,9 +67,9 @@ a:hover:after{
 }
 /*  --  END BUTTON STYLING  --*/
 /****************************************************************************/
-/*  --  START TAB STYLING  --*/
+/*  --  START TOP LEVEL TAB STYLING  --*/
 .title{
-    font-family: sans-serif;
+    font-family: Arial;
     color: #120ed3;
     text-align: center;
 }
@@ -106,5 +106,24 @@ a:hover:after{
     font-size: 22px;
     display: none;
 }
-/*  --  END TAB STYLING  --*/
+/*  --  END TOP LEVEL TAB STYLING  --*/
 /****************************************************************************/
+/*  --  START NESTED TAB STYLING  --*/
+.tabContainer .tabPanel button{
+    position: relative;
+    top: -105px;
+    width: 50%;
+    height: 10%;
+    float: left;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    padding: 10px;
+    font-family: Arial;
+    font-size: 18px;
+    background-color: #eee;
+}
+.tabContainer .tabPanel button:hover{
+    background-color: #d7d4d4;
+}
+/*  --  START NESTED TAB STYLING  --*/

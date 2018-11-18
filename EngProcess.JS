@@ -17,3 +17,5 @@ function showPanel(panelIndex,colorCode) {
     tabPanels[panelIndex].style.backgroundColor=colorCode;
 }
 showPanel(0,'#ffffff');
+console.log(tabButtons);
+console.log(tabPanels);
