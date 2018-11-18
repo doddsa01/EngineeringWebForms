@@ -17,26 +17,43 @@
             <button onclick="showPanel(3,'#ffffff')">Reporting and KPIs</button>
         </div>
         
-        <div class="tabPanel">   <!--  PROCESS BUTTONS  -->
+        <div class="tabPanel">   <!--  GROUPED PROCESS BUTTONS -->
             <a href="#">TAF</a><a href="#">OTAF</a><a href="#">LVAF</a><a href="#">WWWW</a><a href="#">LVAF</a><a href="#">WWWW</a><br>
             <a href="#">TAF</a><a href="#">OTAF</a><a href="#">LVAF</a><a href="#">WWWW</a><a href="#">LVAF</a><a href="#">WWWW</a>
         </div>
 
-        <div class="tabPanel">
-            <button onclick="showPanel(4,'#ffffff')">Process Flow</button>
-            <button onclick="showPanel(5,'#ffffff')">Process Documentation</button>
-        </div>
-     
-        <div class="tabPanel">
-            <button onclick="showPanel(6,'#ffffff')">Form</button>
-            <button onclick="showPanel(7,'#ffffff')">Process Approval</button>
-        </div>
+        <div class="tabPanel">   <!--  PROCESS FLOW BUTTONS AND DOCUMENTATION PANELS -->
+            <button onclick="showtabPanel(0,'#d6d6d6')">Process Flow</button>
+            <button onclick="showtabPanel(1,'#d6d6d6')">Process Documentation</button>
+        </div>  
+            <div class="tabtabPanel">
+                <p>aaaaaaa</p>
+            </div>  
+            <div class="tabtabPanel">
+                <h2>bbbbbbb</h2>
+            </div> 
 
-        <div class="tabPanel">
-            <button onclick="showPanel(8,'#ffffff')">Process Reporting</button>
-            <button onclick="showPanel(9,'#ffffff')">Process KPIs</button> 
+        <div class="tabPanel">   <!--  PROCESS INPUT FORM AND APPROVALS -->
+            <button onclick="showtabPanel(2,'#d6d6d6')">Form</button>
+            <button onclick="showtabPanel(3,'#d6d6d6')">Process Approval</button>
         </div>
-    
+            <div class="tabtabPanel">
+                <h3>ccccccccc</h3>
+            </div>  
+            <div class="tabtabPanel">
+                <h4>ddddddddd</h4>
+            </div> 
+
+        <div class="tabPanel">   <!--  PROCESS REPORTING AND KPIs -->
+            <button onclick="showtabPanel(4,'#d6d6d6')">Process Reporting</button>
+            <button onclick="showtabPanel(5,'#d6d6d6')">Process KPIs</button> 
+        </div>
+            <div class="tabtabPanel">
+                <h1>eeeeeeeeee</h1>
+            </div>  
+            <div class="tabtabPanel">
+                <h1>fffffffffff</h1>
+            </div> 
     </div>
     
     <script src="EngProcess.JS"></script>

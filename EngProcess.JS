@@ -19,3 +19,21 @@ function showPanel(panelIndex,colorCode) {
 showPanel(0,'#ffffff');
 console.log(tabButtons);
 console.log(tabPanels);
+
+var tabBut=document.querySelectorAll(".tabContainer .tabPanel button");
+var tabPan=document.querySelectorAll(".tabContainer  .tabtabPanel");
+
+function showtabPanel(panelId,colorC) {
+    tabBut.forEach(function(nod){
+        nod.style.backgroundColor="";
+        nod.style.color="";
+    });
+    tabBut[panelId].style.backgroundColor=colorC;
+    tabBut[panelId].style.color="blue";
+    tabPan.forEach(function(nod){
+        nod.style.display="none";
+    });
+    tabPan[panelId].style.display="block";
+    tabPan[panelId].style.backgroundColor=colorC;
+}
+showtabPanel(0,'#ffffff');
