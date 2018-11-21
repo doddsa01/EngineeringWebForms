@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=chrome">
     <link rel="stylesheet" type="text/css" href="EngProcess.CSS">
     <title>Business Processes</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
 </head>
 <body>
     <h1 id="mainTitle"class="title">Delphi Technologies Business Processes</h1>
@@ -24,16 +25,18 @@
             <a href="#"onclick="ifmArray(3)">WWWW</a>
             <a href="#"onclick="ifmArray(4)">LVAF</a>
             <a href="#"onclick="ifmArray(5)">WWWW</a> 
+            <a href="#"onclick="ifmArray(4)">LVAF</a>
+            <a href="#"onclick="ifmArray(5)">WWWW</a> 
         </div>
 
         <div class="tabPanel">   <!--  PROCESS FLOW BUTTONS AND DOCUMENTATION PANELS -->
             <button onclick="showtabPanel(0,'#ffffff')">Process Flow</button>
             <button onclick="showtabPanel(1,'#ffffff')">Process Documentation</button> 
             <div class="tabtabPanel">
-                <iframe src="", height="900px", width="100%"></iframe>
+                <iframe id="procFlow"src="", height="900px", width="100%"></iframe>
             </div>  
             <div class="tabtabPanel">
-                <iframe src="", height="900px", width="100%"></iframe>
+                <iframe id="procDoc" src="", height="900px", width="100%"></iframe>
             </div> 
         </div>
 
@@ -41,10 +44,10 @@
             <button onclick="showtabPanel(2,'#d6d6d6')">Form</button>
             <button onclick="showtabPanel(3,'#d6d6d6')">Process Approval</button>
             <div class="tabtabPanel">
-                <h3>ccccccccc</h3>
+                <div id="inForm"></div>
             </div>  
             <div class="tabtabPanel">
-                <h4>ddddddddd</h4>
+                <div id="approveForm"></div>
             </div> 
         </div>
 
@@ -52,10 +55,10 @@
             <button onclick="showtabPanel(4,'#d6d6d6')">Process Reporting</button>
             <button onclick="showtabPanel(5,'#d6d6d6')">Process KPIs</button> 
             <div class="tabtabPanel">
-                <h1>eeeeeeeeee</h1>
+                <iframe id="procRep"src="", height="900px", width="100%"></iframe>
             </div>  
             <div class="tabtabPanel">
-                <h1>fffffffffff</h1>
+                <iframe id="procKpi" src="", height="900px", width="100%"></iframe>
             </div> 
         </div>
     </div>
