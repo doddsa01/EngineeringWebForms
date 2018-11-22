@@ -19,24 +19,25 @@
         </div>
         
         <div class="tabPanel">   <!--  GROUPED PROCESS BUTTONS -->
-            <a href="#"data-tooltip ="Travel Authorisation Form" onclick="ifmArray(0)">TAF</a>
-            <a href="#"onclick="ifmArray(1)">OTAF</a>
-            <a href="#"onclick="ifmArray(2)">LVAF</a>
-            <a href="#"onclick="ifmArray(3)">WWWW</a>
-            <a href="#"onclick="ifmArray(4)">LVAF</a>
-            <a href="#"onclick="ifmArray(5)">WWWW</a> 
-            <a href="#"onclick="ifmArray(4)">LVAF</a>
-            <a href="#"onclick="ifmArray(5)">WWWW</a> 
+            <a href="#"onclick="ifmArray(0)"class="tooltip">TAF<span  class="tooltiptext">Travel Request    </span></a>
+            <a href="#"onclick="ifmArray(1)"class="tooltip">OTAF<span class="tooltiptext">Over-Time Request </span></a>
+            <a href="#"onclick="ifmArray(2)"class="tooltip">PCAF<span class="tooltiptext">Pool Car Request  </span></a>
+            <a href="#"onclick="ifmArray(3)"class="tooltip">FAF<span  class="tooltiptext">Facilities Request</span></a>
+            <a href="#"onclick="ifmArray(4)"class="tooltip">TAF<span  class="tooltiptext">Travel Request    </span></a>
+            <a href="#"onclick="ifmArray(5)"class="tooltip">TAF<span  class="tooltiptext">Travel Request    </span></a> 
+            <a href="#"onclick="ifmArray(6)"class="tooltip">TAF<span  class="tooltiptext">Travel Request    </span></a>
+            <a href="#"onclick="ifmArray(7)"class="tooltip">TAF<span  class="tooltiptext">Travel Request    </span></a> 
         </div>
 
         <div class="tabPanel">   <!--  PROCESS FLOW BUTTONS AND DOCUMENTATION PANELS -->
             <button onclick="showtabPanel(0,'#ffffff')">Process Flow</button>
             <button onclick="showtabPanel(1,'#ffffff')">Process Documentation</button> 
             <div class="tabtabPanel">
-                <iframe id="procFlow"src="", height="900px", width="100%"></iframe>
+                <iframe id="procFlow"src="", height="900px", width="1500px" allowfullscreen></iframe>
+                
             </div>  
             <div class="tabtabPanel">
-                <iframe id="procDoc" src="", height="900px", width="100%"></iframe>
+                <iframe id="procDoc" src="", height="900px", width="100%"allowfullscreen></iframe>
             </div> 
         </div>
 
