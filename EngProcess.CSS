@@ -19,6 +19,7 @@ body{
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
+    height:22px;
     background-color: #FFFFFF;
     font-size: 10px;
     font-family: Arial;
@@ -74,7 +75,7 @@ a:hover{
     background: #0f1cd8;
     transition-delay: 0.5s;
     box-shadow: -30px 30px 50px rgba(0,0,0,0.4);
-    transform: rotate(-10deg) skew(25deg);
+    transform: rotate(-5deg) skew(25deg);
     color: white;
 }
 a:before,

@@ -4,28 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="datedropper.css">
     <title>Document</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="datedropper.js"></script>
 </head>
 <body>
+
     <form>
-        <h1>Input Form Here.............</h1>
+        <h1>Travel Authorisation Form</h1>
         Traveller Details:<br>
         <input type="text" name="firstname"><br>
         Job Function:<br>
         <input type="text" name="firstname"><br>
         Travelling From :<br>
-        <select name="cars">
-                <option value="Park Royal">Park Royal</option>
-                <option value="Stonehouse">Stonehouse</option>
-                <option value="Gillingham">Gillingham</option>
-              </select><br>
+        <select name="site">
+            <option value="Park Royal">Park Royal</option>
+            <option value="Stonehouse">Stonehouse</option>
+            <option value="Gillingham">Gillingham</option>
+        </select><br>
         Date:<br>
-        <input type="text" name="firstname"><br>
-        Destination :<br>
-        <input type="text" name="firstname"><br>
-        Destination:<br>
-        <input type="text" name="lastname"><br>
-        <input type="radio" name="gender" value="Customer" checked> Customer
+        <input type="text" id="t1" data-large-mode="true" data-large-default="true" ><br>
+            <script>
+                var x = document.getElementById("t1")
+                $(x).dateDropper();
+            </script>
+        Date:<br>
+        <input type="text" id="t2" data-large-mode="true" data-large-default="true"><br>
+            <script>
+                var  y= document.getElementById("t2")
+                $(y).dateDropper();
+            </script>
+        <input type="radio" name="gender" value="Customer"> Customer
         <input type="radio" name="gender" value="Supplier"> Supplier
         <input type="radio" name="gender" value="Delphi Technologies"> Delphi Technologies
         <input type="radio" name="gender" value="other"> Other<br>
