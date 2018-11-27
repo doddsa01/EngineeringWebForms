@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="datedropper.css">
+    <link rel="stylesheet" type="text/css" href="my-style.css">
     <title>Document</title>
     <script src="jquery-3.3.1.min.js"></script>
     <script src="datedropper.js"></script>
@@ -12,34 +13,75 @@
 <body>
 
     <form>
-        <h1>Travel Authorisation Form</h1>
+        <h1 style="color:#ff6600">Travel Authorisation Form</h1>
         Traveller Details:<br>
         <input type="text" name="firstname"><br>
         Job Function:<br>
         <input type="text" name="firstname"><br>
-        Travelling From :<br>
+        Travelling From :
         <select name="site">
             <option value="Park Royal">Park Royal</option>
             <option value="Stonehouse">Stonehouse</option>
             <option value="Gillingham">Gillingham</option>
         </select><br>
-        Date:<br>
-        <input type="text" id="t1" data-large-mode="true" data-large-default="true" ><br>
+
+        <h1 id="txt1">Outward Date</h1>
+        <input type="text" id="t1" data-theme="my-style"data-large-mode="true">
             <script>
                 var x = document.getElementById("t1")
                 $(x).dateDropper();
             </script>
-        Date:<br>
-        <input type="text" id="t2" data-large-mode="true" data-large-default="true"><br>
+        <h1 id="txt2">Return Date</h1>
+        <input type="text" id="t2" data-theme="my-style"data-large-mode="true">
             <script>
                 var  y= document.getElementById("t2")
                 $(y).dateDropper();
             </script>
+            <p>Justification</p>
         <input type="radio" name="gender" value="Customer"> Customer
         <input type="radio" name="gender" value="Supplier"> Supplier
         <input type="radio" name="gender" value="Delphi Technologies"> Delphi Technologies
         <input type="radio" name="gender" value="other"> Other<br>
         <input type="submit" value="Submit">
     </form>
+    <style>
+        #t1, #t2{
+            position: relative;
+            top: -100px;
+            width:250px;
+            height: 30px;
+            font-family: Arial;
+            font-size: 20px;
+            border:solid #0f1cd8;
+            border-radius: 20px;
+            border-width: 2px;
+            text-align: center;
+            float: left;
+            margin: 20px;
+        }
+        #txt1{
+            position: absolute;
+            top: 90px;
+            width:250px;
+            height: 30px;
+            font-family: Arial;
+            font-size: 20px;
+            text-align: center;
+            margin: 20px;
+            color: #0f1cd8;
+        }
+        #txt2{
+            position: absolute;
+            top: 90px;
+            width:250px;
+            left: 295px;
+            height: 30px;
+            font-family: Arial;
+            color: #0f1cd8;
+            font-size: 20px;
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
 </body>
 </html>
